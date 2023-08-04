@@ -68,4 +68,35 @@ switch(fruta){
 }
 
 
+// estrutura de repeticao for
+
+for(let i = 0; i < 10; i++) {
+  console.log('incrementou')
+}
+
+
+// funcoes
+
+function cumprimentar(nome) {
+  console.log(`ola ${nome}`)
+}
+cumprimentar('cleitin')
+
+// arrow function 
+
+const testeArrow = () => {
+  console.log('arrow function')
+}
+
+testeArrow()
+
+// ARRAY
+
+const numeros = [1,2,3,4];
+numeros.push(5) // add o 5 ao array
+
+console.log(numeros)
+
+numeros.pop(); //remove o ultimo item
+console.log(numeros)
 
