@@ -27,8 +27,45 @@ console.log(typeof meuUndefined);
 let x = 5; // nao muda
 const y = 10;
 
-// operadores
 
+// conversao de tipos
+
+const meuNumero2 = '123';
+
+const meuNumero2Convertido = Number(meuNumero2);
+console.log(typeof meuNumero2Convertido) // number, 123
+
+
+//CONDICOES  IF, ELSE, ELSE IF
+
+const idade = 20;
+
+if (idade < 13) {
+  console.log('a pessoa eh uma crianca');
+
+}else if(idade < 20) {
+  console.log('adolescente')
+
+} else{
+  console.log('a pessoa eh adulta')
+}
+
+// switch
+
+const fruta = 'Banana';
+
+switch(fruta){
+
+  case "maca":
+    console.log('a fruta eh maca')
+    break;
+
+  case "banana":
+    console.log('a fruta eh banana')
+    break
+    default:
+      console.log('fruta nao encontrada')
+}
 
 
 
