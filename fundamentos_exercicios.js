@@ -27,4 +27,28 @@ for (let i = 0; i < nomes.length; i++){
 }
 
 // exercicio 5 - funcoes, string e math
-//
+//crie um funcao que aceite uma string no formato de 24hrs(ex: 14:30)
+//a funcao deve retornar uma string que converta o horario para o formato de 12hrs (ex: 2:30)
+//use o objeto math para auxiliar nessa conersao
+
+function converteString(horario24) {
+  // const hora = horario24.split(':')[0];
+  // const minuto = horario24.split(':')[1];
+
+  //ou posso fazer de um jeito melhor como abaixo
+
+  const [hora, minuto] = horario24.split(':');
+
+  const hora12 = hora % 12 || 12;
+  let periodo = 'AM';
+
+  if(hora > 12){
+    periodo = 'PM';
+  }
+
+  console.log(`${hora12}:${minuto} ${periodo}`);
+}
+
+converteString('14:30')
+converteString('1:30')
+converteString('11:37')
