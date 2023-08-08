@@ -24,4 +24,22 @@ console.log(fraseFormatada) // Ola, Mundo!
 const frase2 = 'Javascript eh incrivel!';
 
 console.log(frase2.startsWith('Java')) //startsWith =  comeca com 'Java'; // TRUE
-console.log(frase2.endsWithWith('!')) //startsWith =  termina com '!'; // TRUE
+console.log(frase2.endsWith('!')) //startsWith =  termina com '!'; // TRUE
+
+// EXECOES E TRATAMENTO DE ERROS
+
+
+// if (idade < 18){
+  //   throw new Error("Voce deve ter pelo menos 18 anos")
+  // }
+  
+  try {
+  const idade = 15;
+
+  if(idade < 18){
+    throw new Error("Voce deve ter pelo menos 18 anos");
+  }
+  
+} catch (error) {
+  console.log(error.message)
+}
