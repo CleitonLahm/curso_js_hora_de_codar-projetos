@@ -4,6 +4,7 @@ const botaoIgual = document.querySelector('.igual');
 const botaoPonto = document.querySelector('.ponto');
 const botoesNumeros = document.querySelectorAll('.num');
 const botoesOperadores = document.querySelectorAll('.operador');
+const botaoAC = document.querySelector('.limpar');
 
 
 // variaveis globais
@@ -79,9 +80,18 @@ function calcula(){
   atualizaDisplay()
 }
 
+function limparTudo() {
+  operacaoAtual = "";
+  operador = null;
+  valorAnterior = "";
+  calculando = false;
+  atualizaDisplay();
+}
+
 
 // eventos
-botaoPonto.addEventListener("click", inserePonto)
+botaoPonto.addEventListener('click', inserePonto)
 botoesNumeros.forEach((botao) => botao.addEventListener('click', insereNumero));
 botoesOperadores.forEach((botao) => botao.addEventListener('click', insereOperador))
 botaoIgual.addEventListener('click', calcula);
+botaoAC.addEventListener('click', limparTudo);
