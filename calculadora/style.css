@@ -59,3 +59,8 @@ button:hover{
 .operador{
   color: #f7931b;
 }
+
+.limpar{
+  grid-column: 1 / span 4;
+  background-color: #f7931b;
+}
